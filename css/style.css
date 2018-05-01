@@ -1,0 +1,352 @@
+* {
+	margin: 0;
+	padding: 0;
+	box-sizing: border-box;
+}
+
+body {
+	background-image: url(../img/typing.jpg);
+	background-size: cover;
+	background-attachment: fixed;
+	width: 100vw;
+}
+
+h1 {
+	font-family: 'Cormorant Garamond', serif;
+	text-align: center;
+	color: white;
+	font-weight: bolder;
+	text-shadow: 2px 2px #000;
+	position: relative;
+	top: 50%;
+	transform: translateY(-50%);
+}
+
+.banner {
+	width: 100vw;
+	height: 100vh;
+}
+
+nav {
+	padding: 50px;
+	padding-bottom: 100px;
+	background-color: rgba(0, 0, 0, 0.5);
+}
+
+.left li {
+	margin-right: 120px;
+}
+
+.right li {
+	margin-left: 120px;
+}
+
+.right,
+.left {
+	font-family: 'Proza Libre', sans-serif;
+	font-weight: bolder;
+}
+
+@media only screen and (min-width: 1024px) {
+	
+	.navbar-fixed nav {
+		bottom: 0;
+	}
+}
+
+
+
+/* ABOUT */
+
+#about {
+  background-color: #504E63;
+  width: 100vw;
+  min-height: 100vh;
+  text-align: center;
+}
+
+/* Vertical Ruler */
+
+.timeline {
+  position: relative;
+  /*max-width: 1200px;*/
+  margin: 0 auto;
+  padding-top: 50px;
+  padding-bottom: 125px;
+}
+
+.timeline::after {
+  content: '';
+  position: absolute;
+  width: 6px;
+  background-color: #EAD6BD;
+  top: 0;
+  bottom: 0;
+  left: 50%;
+  margin-left: -3px;
+}
+
+/* Container Around Content */
+
+.container {
+  padding: 0 40px;
+  position: relative;
+  background-color: inherit;
+  width: 50%;
+  margin-left: 0; /* to override bootstrap margin auto*/
+  margin-bottom: 5px;
+}
+
+/* Circles on the Timeline */
+
+.container::after {
+  content: '';
+  position: absolute;
+  width: 25px;
+  height: 25px;
+  right: -13px;
+  background-color: white;
+  border: 4px solid #A88661;
+  top: 15px;
+  border-radius: 50%;
+  z-index: 1;
+}
+
+/* Position of Containers */
+
+.hidari {
+  left: 0;
+}
+
+.migi {
+  left: 50%;
+}
+
+/* Add Arrows to the Containers */
+
+.hidari::before {
+  content: "";
+  height: 0;
+  position: absolute;
+  top: 22px;
+  width: 0;
+  z-index: 1;
+  right: 30px;
+  border: medium solid #EAD6BD;
+  border-width: 10px 0 10px 10px;
+  border-color: transparent transparent transparent #EAD6BD;
+}
+
+.migi::before {
+  content: "";
+  height: 0;
+  position: absolute;
+  top: 22px;
+  width: 0;
+  z-index: 1;
+  left: 30px;
+  border: medium solid #EAD6BD;
+  border-width: 10px 10px 10px 0;
+  border-color: transparent #EAD6BD transparent transparent;
+}
+
+/* Fix the Circles for Container on the Right Side */
+
+.migi::after {
+  left: -13px;
+}
+
+.content {
+  background-color: #EAD6BD;
+  position: relative;
+  border-radius: 6px;
+  color: #00142F;
+  padding: 3px;
+  border: 2px solid #A88661;
+}
+
+.content h5 {
+  color: #00142F;
+  font-family: 'Proza Libre', sans-serif;
+}
+
+.content p {
+	color: #00142F;
+	font-family: 'Proza Libre', sans-serif;
+}
+
+/* Media queries - Responsive timeline on screens less than 768px wide */
+@media all and (max-width: 767px) {
+
+  /* Place the timelime to the left */
+  .timeline::after {
+    left: 31px;
+  }
+  
+  /* Full-width containers */
+  .container {
+    width: 100%;
+    padding-left: 70px;
+    padding-right: 25px;
+  }
+  
+  /* Make sure that all arrows are pointing leftwards */
+  .container::before {
+    left: 60px;
+    border: medium solid #EAD6BD;
+    border-width: 10px 10px 10px 0;
+    border-color: transparent #EAD6BD transparent transparent;
+  }
+
+  /* Make sure all circles are at the same spot */
+  .hidari::after, .migi::after {
+    left: 18px;
+  }
+  
+  /* Make all right containers behave like the left ones */
+  .migi {
+    left: 0%;
+  }
+}
+
+@media only screen and (max-width: 374px) {
+	.timeline {
+		padding-top: 130px;
+		padding-bottom: 20px;
+	}
+}
+
+@media only screen and (min-width: 375px) and (max-width: 413px) {
+	.timeline {
+		padding-top: 140px;
+		padding-bottom: 20px;
+	}
+}
+
+@media only screen and (min-width: 414px) and (max-width: 766px) {
+	.timeline {
+		padding-top: 140px;
+		padding-bottom: 10px;
+	}
+}
+
+@media only screen and (min-width: 767px) and (max-width: 800px) {
+	.timeline {
+		padding-top: 160px;
+		padding-bottom: 10px;
+	}
+
+	.container {
+		margin-bottom: 50px;
+	}
+}
+
+/* SKILLS */
+
+#skills {
+	width: 100vw;
+	height: 100vh;
+	background-image: url('../img/aurora.jpg');
+	background-attachment: fixed;
+	background-size: cover;
+	position: relative;
+}
+
+.skillset {
+	position: absolute;
+	top: 50%;
+	left: 50%;
+	transform: translate(-50%, -50%);
+}
+
+@media only screen and (max-width: 768px) {
+
+	.skillset {
+		width: 90vw;
+	}
+}
+
+/* PROJECTS */
+
+#projects {
+  background-color: #EAD6BD;
+  width: 100vw;
+  min-height: 100vh;
+  text-align: center;
+}
+
+.card {
+	background-color: #f2f2f2;
+	border: 1px solid #00142F;
+}
+
+.card .card-action {
+	font-weight: bolder;
+	font-family: 'Cormorant Garamond', serif;
+}
+
+.card .card-action a:not(.btn):not(.btn-large):not(.btn-small):not(.btn-large):not(.btn-floating) {
+	color: #00142F !important;
+}
+
+/* CONTACT */
+
+#contact {
+  background-color: #504E63;
+  width: 100vw;
+  min-height: 100vh;
+  text-align: center;
+}
+
+#profile {
+  padding-top: 50px;
+}
+
+#message {
+  margin-top: 50px;
+}
+
+#message i {
+  color: white;
+}
+
+.input-field input,
+.input-field .helper-text {
+  color: white;
+}
+
+.input-field label {
+  color: white;
+}
+
+textarea {
+  height: auto;
+  color: white;
+}
+
+#sendBtn {
+  background-color: #A88661;
+  color: #fff;
+}
+
+.footer-copyright {
+  color: #A88661;
+  margin-top: -8px;
+}
+
+#downloadCV {
+  background-color: #504E63;
+}
+
+input[type=email].valid:not(.browser-default) {
+  border-bottom: 1px solid #fff;
+  box-shadow: 0 1px 0 0 #fff;
+}
+
+/*input[type=email]:not(.browser-default).valid ~ .helper-text[data-success] {
+  color: #fff;
+}*/
+
+/*input[type=email]:not(.browser-default):focus:not([readonly])+label {
+  color: white;
+}*/
