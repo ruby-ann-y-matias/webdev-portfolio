@@ -9,6 +9,11 @@ body {
 	background-size: cover;
 	background-attachment: fixed;
 	width: 100vw;
+  overflow-x: hidden;
+}
+
+.container {
+  width: 90%;
 }
 
 h1 {
@@ -18,11 +23,11 @@ h1 {
 	font-weight: bolder;
 	text-shadow: 2px 2px #000;
 	position: relative;
-	top: 50%;
-	transform: translateY(-50%);
+	top: 30%;
+	/*transform: translateY(-50%);*/
 }
 
-.banner {
+#banner {
 	width: 100vw;
 	height: 100vh;
 }
@@ -72,7 +77,7 @@ nav {
   /*max-width: 1200px;*/
   margin: 0 auto;
   padding-top: 50px;
-  padding-bottom: 125px;
+  padding-bottom: 158px;
 }
 
 .timeline::after {
@@ -88,7 +93,7 @@ nav {
 
 /* Container Around Content */
 
-.container {
+.hx-container {
   padding: 0 40px;
   position: relative;
   background-color: inherit;
@@ -99,7 +104,7 @@ nav {
 
 /* Circles on the Timeline */
 
-.container::after {
+.hx-container::after {
   content: '';
   position: absolute;
   width: 25px;
@@ -184,14 +189,14 @@ nav {
   }
   
   /* Full-width containers */
-  .container {
+  .hx-container {
     width: 100%;
     padding-left: 70px;
     padding-right: 25px;
   }
   
   /* Make sure that all arrows are pointing leftwards */
-  .container::before {
+  .hx-container::before {
     left: 60px;
     border: medium solid #EAD6BD;
     border-width: 10px 10px 10px 0;
@@ -236,7 +241,7 @@ nav {
 		padding-bottom: 10px;
 	}
 
-	.container {
+	.hx-container {
 		margin-bottom: 50px;
 	}
 }

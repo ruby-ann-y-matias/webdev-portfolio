@@ -60,7 +60,7 @@
 			<li><a href="#contact" class="sidenav-close"><i class="material-icons">phone</i> Contact</a></li>
 		</ul>
 
-	<div id="banner" class="banner">
+ 	<div id="banner">
 		
 		<h1>Ruby Ann Y. Matias</h1>
 
@@ -70,35 +70,35 @@
 
 		<div class="timeline">
 			
-			<div class="container hidari">
+			<div class="hx-container hidari">
 				<div class="content">
 					<h5>2018</h5>
 					<p>Studied at Tuitt Coding Bootcamp Night Class from October 23, 2017 to May 11, 2018</p>
 				</div>
 			</div>
 
-			<div class="container migi">
+			<div class="hx-container migi">
 				<div class="content">
 					<h5>2017</h5>
 					<p>Left St. Luke's Medical Center on December 29 to pursue passion for Web Development</p>
 				</div>
 			</div>
 
-			<div class="container hidari">
+			<div class="hx-container hidari">
 				<div class="content">
 					<h5>2013</h5>
 					<p>Started working as a Therapeutic Dietitian in St. Luke's Medical Center - Global City on October 1</p>
 				</div>
 			</div>
 
-			<div class="container migi">
+			<div class="hx-container migi">
 				<div class="content">
 					<h5>2012</h5>
 					<p>Passed the Board Exam for Nutritionist-Dietitians in July and took Oath on August 6</p>
 				</div>
 			</div>
 
-			<div class="container hidari">
+			<div class="hx-container hidari">
 				<div class="content">
 					<h5>2011</h5>
 					<p>Graduated with a Bachelor of Science in Nutrition at the University of the Philippines Los Baños on October 28</p>
@@ -119,6 +119,8 @@
 		
 
 	<div id="projects">
+
+		<div class="container">
 		
 		<div class="row">
 			<div class="col s12 m4">
@@ -171,7 +173,6 @@
 			<i class="material-icons">file_download</i> Download CV
 		</a>
 
-		<!-- Place this tag where you want the button to render. -->
 		<a class="github-button" target="_blank" href="https://github.com/nanilola" data-size="large" aria-label="Follow @nanilola on GitHub">Follow @nanilola</a>
 
 		<br>
@@ -181,60 +182,65 @@
 			<script type="IN/MemberProfile" data-id="https://www.linkedin.com/in/ruby-ann-matias-47a564154" data-format="inline" data-related="false"></script>
 		</div>
 
-	</div>
-
-	<div id="contact">
-
-		<div class="row">
-
-			<div id="profile" class="col s12 m6">
-				<img src="img/fashion.jpg" class="responsive-img circle">
-			</div>
-
-			<div id="message" class="col s12 m6">
-				<form action="https://formspree.io/raymcmy@gmail.com" method="POST">
-					<div class="row">
-						<div class="input-field col s12">
-							<i class="material-icons prefix">person_pin</i> 
-							<input id="name" type="text" name="name">
-							<label for="name">Name</label>
-						</div>
-
-						<div class="input-field col s12">
-							<i class="material-icons prefix">email</i> 
-							<input id="email" name="email" type="email" class="validate">
-							<label for="email">Email</label>
-							<span class="helper-text" data-error="Must include an @ sign (e.g. name@email.com)" data-success="Great!">valid email address please</span>
-						</div>
-
-						<div class="input-field col s12">
-							<i class="material-icons prefix">phone</i> 
-							<input id="number" type="tel" name="number">
-							<label for="number">Contact Number</label>
-						</div>
-
-						<div class="input-field col s12">
-							<i class="material-icons prefix">edit</i> 
-				        	<textarea rows="10" id="textarea1" name="message"></textarea>
-				        	<label for="textarea1"> Message</label>
-				        </div>
-
-				        <input type="hidden" name="_next" value="https://ruby-ann-y-matias.github.io/webdev-portfolio/index.html">
-
-				        <button id="sendBtn" class="waves-effect waves-light btn"><i class="material-icons">send</i> Send</button>
-
-					</div>
-				</form>
-
-				<div class="footer-copyright">
-					© 2018 Ruby Ann Y. Matias
-				</div>
-			</div>
-
 		</div>
 
 	</div>
 
+
+
+	<div id="contact">
+
+		<div class="container">
+
+			<div class="row">
+
+				<div id="profile" class="col s12 m6">
+					<img src="img/fashion.jpg" class="responsive-img circle">
+				</div>
+
+				<div id="message" class="col s12 m6">
+					<form action="https://formspree.io/raymcmy@gmail.com" method="POST">
+						<div class="row">
+							<div class="input-field col s12">
+								<i class="material-icons prefix">person_pin</i> 
+								<input id="name" type="text" name="name">
+								<label for="name">Name</label>
+							</div>
+
+							<div class="input-field col s12">
+								<i class="material-icons prefix">email</i> 
+								<input id="email" name="email" type="email" class="validate">
+								<label for="email">Email</label>
+								<span class="helper-text" data-error="Must include an @ sign (e.g. name@email.com)" data-success="Great!">valid email address please</span>
+							</div>
+
+							<div class="input-field col s12">
+								<i class="material-icons prefix">phone</i> 
+								<input id="number" type="tel" name="number">
+								<label for="number">Contact Number</label>
+							</div>
+
+							<div class="input-field col s12">
+								<i class="material-icons prefix">edit</i> 
+					        	<textarea rows="10" id="textarea1" name="message"></textarea>
+					        	<label for="textarea1"> Message</label>
+					        </div>
+
+					        <input type="hidden" name="_next" value="https://ruby-ann-y-matias.github.io/webdev-portfolio/index.html">
+
+					        <button id="sendBtn" class="waves-effect waves-light btn"><i class="material-icons">send</i> Send</button>
+
+						</div>
+					</form>
+
+					<div class="footer-copyright">
+						© 2018 Ruby Ann Y. Matias
+					</div>
+				</div>
+
+			</div>
+		</div> 
+	</div>
 
 <!-- Import jQuery -->      
 <script type="text/javascript" src="lib/jquery-3.3.1.min.js"></script>
