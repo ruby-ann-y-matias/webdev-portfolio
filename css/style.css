@@ -99,10 +99,7 @@ nav {
 
 .timeline {
   position: relative;
-  /*max-width: 1200px;*/
   margin: 0 auto;
-  padding-top: 50px;
-  padding-bottom: 158px;
 }
 
 .timeline::after {
@@ -249,7 +246,7 @@ nav {
 @media only screen and (min-width: 375px) and (max-width: 413px) {
 	.timeline {
 		padding-top: 140px;
-		padding-bottom: 20px;
+		padding-bottom: 30px;
 	}
 }
 
@@ -260,15 +257,29 @@ nav {
 	}
 }
 
-@media only screen and (min-width: 767px) and (max-width: 800px) {
+@media only screen and (min-width: 767px) and (max-width: 835px) {
 	.timeline {
-		padding-top: 160px;
-		padding-bottom: 10px;
+		padding-top: 180px;
+		padding-bottom: 170px;
 	}
 
 	.hx-container {
 		margin-bottom: 50px;
 	}
+}
+
+@media only screen and (min-width: 836px) and (max-width: 1314px) {
+  .timeline {
+    padding-top: 80px;
+    padding-bottom: 70px;
+  }
+}
+
+@media only screen and (min-width: 1315px) {
+  .timeline {
+    padding-top: 160px;
+    padding-bottom: 160px;
+  }
 }
 
 /* SKILLS */
@@ -319,7 +330,7 @@ nav {
 	color: #00142F !important;
 }
 
-@media only screen and (min-width: 768px) and (max-width: 1023px) {
+@media only screen and (min-width: 767px) and (max-width: 1025px) {
 
     #projects {
       padding-top: 200px;
@@ -381,7 +392,7 @@ input[type=email].valid:not(.browser-default) {
   box-shadow: 0 1px 0 0 #fff;
 }
 
-@media only screen and (min-width: 768px) and (max-width: 1023px) {
+@media only screen and (min-width: 767px) and (max-width: 1025px) {
 
     #contact {
       padding-top: 200px;
