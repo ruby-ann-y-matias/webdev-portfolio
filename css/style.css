@@ -53,6 +53,15 @@ h1 {
   height: 100vh;
 }
 
+#raymLogo {
+  animation: myMove infinite 20s linear;
+}
+
+@keyframes myMove {
+  from {transform: rotate(0deg);}
+  to {transform: rotate(360deg);}
+}
+
 .navbar-fixed {
   height: 0;
 }
@@ -78,7 +87,7 @@ nav {
 }
 
 @media only screen and (min-width: 1024px) {
-	
+
 	.navbar-fixed nav {
 		bottom: 0;
 	}
@@ -209,14 +218,14 @@ nav {
   .timeline::after {
     left: 31px;
   }
-  
+
   /* Full-width containers */
   .hx-container {
     width: 100%;
     padding-left: 70px;
     padding-right: 25px;
   }
-  
+
   /* Make sure that all arrows are pointing leftwards */
   .hx-container::before {
     left: 60px;
@@ -229,7 +238,7 @@ nav {
   .hidari::after, .migi::after {
     left: 18px;
   }
-  
+
   /* Make all right containers behave like the left ones */
   .migi {
     left: 0%;
