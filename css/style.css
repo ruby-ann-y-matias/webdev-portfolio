@@ -30,21 +30,21 @@ body {
   width: 90%;
 }
 
-h1 {
-	font-family: 'Cormorant Garamond', serif;
-	text-align: center;
-	color: white;
-	font-weight: bolder;
-	text-shadow: 2px 2px #000;
-	position: absolute;
-	top: 50%;
-	z-index: 998;
+.position-holder {
+  position: absolute;
+  top: 50%;
+  z-index: 998;
   left: 50%;
   transform: translate(-50%, -50%);
+  color: white;
+  font-family: 'Cormorant Garamond', serif;
+  font-weight: bolder;
+  text-align: center;
+  text-shadow: 2px 2px #000;
 }
 
 #banner {
-	/*display: flex;*/
+	display: flex;
   align-items: center;
   justify-content: center;
   position: relative;
@@ -54,10 +54,10 @@ h1 {
 }
 
 #raymLogo {
-  animation: myMove infinite 20s linear;
+  animation: rotateMyLogo infinite 20s linear;
 }
 
-@keyframes myMove {
+@keyframes rotateMyLogo {
   from {transform: rotate(0deg);}
   to {transform: rotate(360deg);}
 }
@@ -102,6 +102,8 @@ nav {
   width: 100vw;
   min-height: 100vh;
   text-align: center;
+  display: flex;
+  justify-content: center;
 }
 
 /* Vertical Ruler */
@@ -204,6 +206,8 @@ nav {
 .content h5 {
   color: #00142F;
   font-family: 'Proza Libre', sans-serif;
+  font-size: 1em;
+  font-weight: bolder;
 }
 
 .content p {
@@ -284,12 +288,12 @@ nav {
   }
 }
 
-@media only screen and (min-width: 1315px) {
+/*@media only screen and (min-width: 1315px) {
   .timeline {
     padding-top: 160px;
     padding-bottom: 160px;
   }
-}
+}*/
 
 /* SKILLS */
 
@@ -365,6 +369,7 @@ nav {
 
 #message i {
   color: white;
+  vertical-align: top;
 }
 
 .input-field input,
@@ -379,6 +384,11 @@ nav {
 textarea {
   height: auto;
   color: white;
+  padding: 20px;
+}
+
+label[for="textarea1"] {
+  padding: 20px;
 }
 
 #sendBtn {
