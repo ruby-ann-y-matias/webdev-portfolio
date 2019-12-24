@@ -304,14 +304,24 @@ nav {
 	background-attachment: fixed;
 	background-size: cover;
 	position: relative;
+  padding: 50px;
 }
 
-.skillset {
+#skills .row {
+  text-align: center;
+}
+
+#skills .row > .col {
+  height: 20vh;
+}
+
+/*.skillset {
 	position: absolute;
 	top: 50%;
 	left: 50%;
 	transform: translate(-50%, -50%);
-}
+}*/
+
 
 @media only screen and (max-width: 768px) {
 
@@ -327,6 +337,10 @@ nav {
   width: 100vw;
   min-height: 100vh;
   text-align: center;
+}
+
+#personalWidgets {
+  width: 30vw;
 }
 
 .card {
@@ -385,6 +399,11 @@ textarea {
   height: auto;
   color: white;
   padding: 20px;
+  resize: none;
+}
+
+#textarea1:focus {
+  outline: #26a69a auto 5px;
 }
 
 label[for="textarea1"] {
@@ -404,6 +423,10 @@ label[for="textarea1"] {
 #downloadCV {
   background-color: #504E63;
   margin-bottom: 5px;
+}
+
+#downloadCV i {
+  vertical-align: bottom;
 }
 
 input[type=email].valid:not(.browser-default) {
