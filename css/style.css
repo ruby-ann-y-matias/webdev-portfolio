@@ -217,6 +217,13 @@ nav {
 
 /* Media queries - Responsive timeline on screens less than 768px wide */
 @media all and (max-width: 767px) {
+  #banner h1 {
+    font-size: 2.1rem;
+  }
+
+  #banner h2 {
+    font-size: 1.8rem;
+  }
 
   /* Place the timelime to the left */
   .timeline::after {
@@ -315,6 +322,11 @@ nav {
   height: 20vh;
 }
 
+#skills img {
+  height: 10vh;
+  max-width: 30vw;
+}
+
 /*.skillset {
 	position: absolute;
 	top: 50%;
@@ -337,10 +349,11 @@ nav {
   width: 100vw;
   min-height: 100vh;
   text-align: center;
+  padding-bottom: 1px;
 }
 
 #personalWidgets {
-  width: 30vw;
+  /*width: 30vw;*/
 }
 
 .card {
@@ -371,6 +384,7 @@ nav {
   width: 100vw;
   min-height: 100vh;
   text-align: center;
+  padding-bottom: 1px;
 }
 
 #profile {
