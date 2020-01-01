@@ -361,6 +361,10 @@ nav {
 	border: 1px solid #00142F;
 }
 
+.card.medium .card-image+.card-content {
+  overflow-y: scroll;
+}
+
 .card .card-action {
 	font-weight: bolder;
 	font-family: 'Cormorant Garamond', serif;
