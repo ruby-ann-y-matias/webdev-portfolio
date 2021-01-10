@@ -350,19 +350,29 @@
 	//   });
 	// }
 
-  const fullName = "Ruby Ann Y. Matias", jobTitle = "Full Stack Developer";
+  const isMobile = window.innerWidth < 768;
+
+  const fullName = isMobile ? "Ruby Matias" : "Ruby Ann Y. Matias";
+  const jobTitle = isMobile ? "Full Stack Dev" : "Full Stack Developer";
   const nameCanvas = document.querySelector("#nameCanvas").getContext("2d");
   const titleCanvas = document.querySelector("#titleCanvas").getContext("2d");
+  let fontSize = "50px";
+
+  if (isMobile) {
+    document.querySelector("#nameCanvas").width = 375;
+    document.querySelector("#titleCanvas").width = 375;
+    fontSize = "45px";
+  }
 
   const dashLen = 220, speed = 5;
   let dashOffsetName = dashLen, xName = 30, iName = 0;
   let dashOffsetTitle = dashLen, xTitle = 30, iTitle = 0;
 
-  nameCanvas.font = "50px Comic Sans MS, cursive, TSCu_Comic, sans-serif";
+  nameCanvas.font = `${fontSize} Comic Sans MS, sans-serif`;
   nameCanvas.lineWidth = 5; nameCanvas.lineJoin = "round"; nameCanvas.globalAlpha = 2/3;
   nameCanvas.strokeStyle = nameCanvas.fillStyle = "#000";
 
-  titleCanvas.font = "50px Comic Sans MS, cursive, TSCu_Comic, sans-serif";
+  titleCanvas.font = `${fontSize} Comic Sans MS, sans-serif`;
   titleCanvas.lineWidth = 5; titleCanvas.lineJoin = "round"; titleCanvas.globalAlpha = 2/3;
   titleCanvas.strokeStyle = titleCanvas.fillStyle = "#000";
 

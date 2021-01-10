@@ -26,6 +26,11 @@ body {
   stroke-width: 2;
 }
 */
+
+.sidenav {
+  width: max-content;
+}
+
 .container {
   width: 90%;
 }
@@ -70,6 +75,7 @@ body {
 }
 
 nav {
+  width: 100vw;
 	padding: 50px;
 	padding-bottom: 100px;
 	background-color: rgba(0, 0, 0, 0.5);
@@ -114,6 +120,7 @@ nav {
 .timeline {
   position: relative;
   margin: 0 auto;
+  overflow: hidden;
 }
 
 .timeline::after {
@@ -311,11 +318,9 @@ nav {
   background: #EAD6BD;
 	width: 100vw;
 	height: 100vh;
-	/*background-image: url('../img/aurora.jpg');
-	background-attachment: fixed;
-	background-size: cover;*/
 	position: relative;
   padding: 50px;
+  overflow: hidden;
 }
 
 #skills .row {
@@ -354,6 +359,7 @@ nav {
   min-height: 100vh;
   text-align: center;
   padding-bottom: 1px;
+  overflow: hidden;
 }
 
 #personalWidgets {
@@ -393,6 +399,7 @@ nav {
   min-height: 100vh;
   text-align: center;
   padding-bottom: 1px;
+  overflow: hidden;
 }
 
 #profile {
